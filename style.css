@@ -1,0 +1,240 @@
+body{
+    background-color: #EDEDCE;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background: #0C2C55;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+.header-nav ul{
+    background-color: #296374;
+    list-style: none;
+    display: flex;
+    padding: 15px;
+    margin: 0;
+    gap: 40px;
+    text-align: center;
+    justify-content: center;
+}
+
+.header-nav a{
+    color: white;
+    text-decoration: none;
+    justify-content: center;
+}
+
+.header-nav a:hover{
+    background-color: #0C2C55;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.intro-container{
+    display: flex;
+    padding: 10px;
+    gap: 50px;
+}
+
+.intro-sec{
+    text-align: center;
+    margin: 50px;
+}
+
+@media (max-width: 768px) {
+ .intro-container {
+ flex-direction: column;
+ }
+}
+
+#hello, #name, #occupation, #south_africa{
+    margin: 5px;
+}
+
+#name, #south_africa{
+    color: #0C2C55;
+}
+
+#occupation{
+    color: #629FAD;
+}
+
+#name{
+    font-size: 60px;
+}
+
+button{
+    background-color: #629FAD;
+    border-radius: 10px;
+    border-style: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #0C2C55;
+}
+
+video{
+    max-width: 100%;
+    height: auto;
+}
+
+.intro-video{
+    width: 50%;
+}
+
+main{
+    padding: 15px;
+}
+
+.education-card{
+    padding: 10px;
+    background-color: #A9A9A9;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.education-card h3 {
+ margin-top: 0;
+ color: #222;
+}
+.education-card p {
+ margin: 5px 0;
+}
+
+.table-wrapper{
+    overflow-x: auto;
+    margin-top: 20px;
+}
+
+.modern-table{
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 15px;
+    background: #A9A9A9;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.modern-table thead{
+    background: #122;
+    color: white; 
+    text-transform: uppercase;
+}
+
+.modern-table th, .modern-table td {
+    padding: 14px 16px;
+    text-align: left;
+}
+
+.modern-table tbody tr:nth-child(even){
+    background: #818589;
+}
+
+.modern-table tbody tr:hover{
+    background: #eaffd0;
+}
+
+.contact-box{
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+    background: #818589;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.contact-info, .contact-form{
+    flex: 1;
+}
+
+.contact-info i{
+    color: yellowgreen;
+    margin-right: 8px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.contact-form button{
+    width: 100%;
+    background: #222; 
+    color: white;
+    padding: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover{
+    background: greenyellow;
+}
+
+@media (max-width: 768px) {
+    .contact-box {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    .intro-container {
+        flex-direction: column;
+    }
+}
+
+.about-text, 
+.intro-video{
+    width: 100%;
+}
+
+nav a{
+    display: block;
+    margin: 8px 0;
+}
+
+.contact-box{
+    flex-direction: column;
+}
+
+/*Dark Mode or Light Mode CSS*/
+
+body {
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark {
+    background-color: #121212;
+    color: white;
+}
+
+button {
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#darkbtn {
+    background-color: #333;
+    color: white;
+}
+
+#lightbtn {
+    background-color: #f0f0f0;
+    color: black;
+}
